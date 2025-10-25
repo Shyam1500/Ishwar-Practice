@@ -1,23 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ishwar Practice</title>
-    <script src="ishwar.js"></script>
-    <link rel="stylesheet" href="ishwar.css">
-</head>
-<body>
+    
+    <link rel="stylesheet" href="ishwar.css" />
+  </head>
+  <body>
     <div class="grid__practice">
-        <div class="content1">
-            <div class="box"> Hi Lorem ipsum  lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maxime illo sunt animi! Repudiandae atque laboriosam veniam repellat quasi nostrum! Praesentium in recusandae repudiandae sint quas quibusdam sapiente culpa consequatur qui molestiae itaque labore, minus autem nam adipisci. Dolore quidem earum tempore quasi cum harum quos nostrum qui, deserunt quod hic, maxime commodi aspernatur? Vel provident modi neque atque, mollitia porro eius dignissimos unde itaque veniam saepe, quam magni id eaque asperiores aliquid quas voluptates praesentium.
-                67 dolor, sit amet consectetur adipisicing. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit tenetur temporibus reiciendis. Fugit a reiciendis nemo eum laboriosam assumenda accusamus, repellat consectetur ea tempore qui explicabo! Voluptas saepe reprehenderit officiis consectetur inventore velit illo assumenda similique laboriosam illum, corrupti ratione facere et veniam sit? Laborum.</div>
-            <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae.</div>
+      <div class="content1">
+        <div class="box">
+          Hi Lorem ipsum lorem Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Odio maxime illo sunt animi! Repudiandae atque
+          laboriosam veniam repellat quasi nostrum! Praesentium in recusandae
+          repudiandae sint quas quibusdam sapiente culpa consequatur qui
+          molestiae itaque labore, minus autem nam adipisci. Dolore quidem earum
+          tempore quasi cum harum quos nostrum qui, deserunt quod hic, maxime
+          commodi aspernatur? Vel provident modi neque atque, mollitia porro
+          eius dignissimos unde itaque veniam saepe, quam magni id eaque
+          asperiores aliquid quas voluptates praesentium. 67 dolor, sit amet
+          consectetur adipisicing. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Sit tenetur temporibus reiciendis. Fugit a
+          reiciendis nemo eum laboriosam assumenda accusamus, repellat
+          consectetur ea tempore qui explicabo! Voluptas saepe reprehenderit
+          officiis consectetur inventore velit illo assumenda similique
+          laboriosam illum, corrupti ratione facere et veniam sit? Laborum.
         </div>
-        <div class="content2">
-            <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing.</div>
-            <div class="box">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta maxime repellat doloribus fugit odio quidem quis asperiores corrupti! Iusto fugit facere nesciunt exercitationem blanditiis mollitia unde quasi officia odio aliquam.consectetur adipisicing elit. Beatae.</div>
+        <div class="box">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae.
         </div>
+      </div>
+      <div class="content2">
+        <div class="box">
+          Lorem ipsum dolor, sit amet consectetur adipisicing.
+        </div>
+        <div class="box">
+          Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Soluta maxime repellat doloribus fugit odio quidem
+          quis asperiores corrupti! Iusto fugit facere nesciunt exercitationem
+          blanditiis mollitia unde quasi officia odio aliquam.consectetur
+          adipisicing elit. Beatae.
+        </div>
+      </div>
     </div>
-</body>
+
+    <h1 id="dom">I like dom manipulation</h1>
+
+    <label>Enter value no1:</label>
+    <input type="Number" class="first" />
+    <br />
+    <label for="">Enter value no2:</label>
+    <input type="Number" class="second" />
+    <button onclick="getadd()">Adding sum of 2 input on click</button>
+    <p class="result"></p>
+    <script>
+      function getadd() {
+        const num1 = Number(document.getElementsByClassName("first").value);
+        const num2 = Number(document.getElementsByClassName("second").value);
+
+        const add = num1 + num2;
+        console.log(add);
+        document.getElementsByClassName("result").innerHTML = "Addition" + add;
+      }
+    </script>
+    <script src="ishwar.js"></script>
+  </body>
 </html>

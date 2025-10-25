@@ -89,11 +89,49 @@ console.log("Hi");
 
 // # Nested Function
 
-function outerfun(a){
-    function innnerfun(b){
-        return b;
-    }
-    return innnerfun;
-}
-const add = outerfun(1);
-console.log (add(10));
+// function outerfun(a){
+//     function innnerfun(b){
+//         return b;
+//     }
+//     return innnerfun;
+// }
+// const add = outerfun(1);
+// console.log (add(10));
+
+// #Dom Manipulation
+
+// function getadd(){
+//     const num1 = Number(document.getElementsByClassName("first").value);
+//     const num2 = Number(document.getElementsByClassName("second").value);
+
+//     const add = num1 + num2 ;
+//     console.log(add);
+//     document.getElementsByClassName("result").innerHTML = "Addition" + add ;
+// }
+
+
+// const ishwar = document.getElementById('dom');
+
+// ishwar.style.fontSize = "40px";
+
+// # object in jsvsscript
+
+// let Divya = {expectation:"high", Nakhare: "jyada"};
+
+// delete Divya.Nakhare;
+// console.log(Divya);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
